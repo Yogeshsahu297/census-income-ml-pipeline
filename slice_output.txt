@@ -1,0 +1,129 @@
+Model performance on slices of the test data
+============================================================
+Overall test set: precision=0.7919 recall=0.5995 fbeta=0.6824
+
+Feature: workclass
+------------------------------------------------------------
+workclass=? | count=363 | precision=0.7083 | recall=0.4722 | fbeta=0.5667
+workclass=Federal-gov | count=195 | precision=0.7069 | recall=0.5395 | fbeta=0.6119
+workclass=Local-gov | count=389 | precision=0.7800 | recall=0.6500 | fbeta=0.7091
+workclass=Never-worked | count=1 | precision=1.0000 | recall=1.0000 | fbeta=1.0000
+workclass=Private | count=4597 | precision=0.8097 | recall=0.5649 | fbeta=0.6655
+workclass=Self-emp-inc | count=222 | precision=0.7619 | recall=0.8136 | fbeta=0.7869
+workclass=Self-emp-not-inc | count=500 | precision=0.8214 | recall=0.6434 | fbeta=0.7216
+workclass=State-gov | count=245 | precision=0.7302 | recall=0.6970 | fbeta=0.7132
+workclass=Without-pay | count=1 | precision=1.0000 | recall=1.0000 | fbeta=1.0000
+
+Feature: education
+------------------------------------------------------------
+education=10th | count=204 | precision=1.0000 | recall=0.1333 | fbeta=0.2353
+education=11th | count=244 | precision=1.0000 | recall=0.2727 | fbeta=0.4286
+education=12th | count=79 | precision=1.0000 | recall=0.2500 | fbeta=0.4000
+education=1st-4th | count=28 | precision=1.0000 | recall=0.5000 | fbeta=0.6667
+education=5th-6th | count=51 | precision=1.0000 | recall=1.0000 | fbeta=1.0000
+education=7th-8th | count=120 | precision=1.0000 | recall=0.0000 | fbeta=0.0000
+education=9th | count=106 | precision=1.0000 | recall=0.1429 | fbeta=0.2500
+education=Assoc-acdm | count=191 | precision=0.9677 | recall=0.5455 | fbeta=0.6977
+education=Assoc-voc | count=274 | precision=0.8333 | recall=0.4118 | fbeta=0.5512
+education=Bachelors | count=1096 | precision=0.7430 | recall=0.8535 | fbeta=0.7945
+education=Doctorate | count=84 | precision=0.8983 | recall=0.8413 | fbeta=0.8689
+education=HS-grad | count=2120 | precision=0.8788 | recall=0.2566 | fbeta=0.3973
+education=Masters | count=318 | precision=0.8376 | recall=0.9066 | fbeta=0.8707
+education=Preschool | count=9 | precision=1.0000 | recall=1.0000 | fbeta=1.0000
+education=Prof-school | count=114 | precision=0.8105 | recall=0.9277 | fbeta=0.8652
+education=Some-college | count=1475 | precision=0.7273 | recall=0.4000 | fbeta=0.5161
+
+Feature: marital-status
+------------------------------------------------------------
+marital-status=Divorced | count=883 | precision=0.9655 | recall=0.2718 | fbeta=0.4242
+marital-status=Married-AF-spouse | count=5 | precision=1.0000 | recall=0.0000 | fbeta=0.0000
+marital-status=Married-civ-spouse | count=2977 | precision=0.7807 | recall=0.6532 | fbeta=0.7113
+marital-status=Married-spouse-absent | count=86 | precision=1.0000 | recall=0.2000 | fbeta=0.3333
+marital-status=Never-married | count=2181 | precision=1.0000 | recall=0.2921 | fbeta=0.4522
+marital-status=Separated | count=199 | precision=1.0000 | recall=0.3125 | fbeta=0.4762
+marital-status=Widowed | count=182 | precision=1.0000 | recall=0.3636 | fbeta=0.5333
+
+Feature: occupation
+------------------------------------------------------------
+occupation=? | count=364 | precision=0.7083 | recall=0.4722 | fbeta=0.5667
+occupation=Adm-clerical | count=819 | precision=0.7119 | recall=0.3415 | fbeta=0.4615
+occupation=Armed-Forces | count=3 | precision=1.0000 | recall=1.0000 | fbeta=1.0000
+occupation=Craft-repair | count=800 | precision=0.7467 | recall=0.3043 | fbeta=0.4324
+occupation=Exec-managerial | count=808 | precision=0.8130 | recall=0.8005 | fbeta=0.8067
+occupation=Farming-fishing | count=203 | precision=0.7273 | recall=0.3810 | fbeta=0.5000
+occupation=Handlers-cleaners | count=252 | precision=0.8000 | recall=0.3333 | fbeta=0.4706
+occupation=Machine-op-inspct | count=392 | precision=0.8750 | recall=0.2692 | fbeta=0.4118
+occupation=Other-service | count=684 | precision=1.0000 | recall=0.1250 | fbeta=0.2222
+occupation=Priv-house-serv | count=20 | precision=1.0000 | recall=1.0000 | fbeta=1.0000
+occupation=Prof-specialty | count=818 | precision=0.8026 | recall=0.8472 | fbeta=0.8243
+occupation=Protective-serv | count=121 | precision=0.7826 | recall=0.4286 | fbeta=0.5538
+occupation=Sales | count=718 | precision=0.7877 | recall=0.5637 | fbeta=0.6571
+occupation=Tech-support | count=189 | precision=0.7442 | recall=0.5614 | fbeta=0.6400
+occupation=Transport-moving | count=322 | precision=0.7500 | recall=0.1967 | fbeta=0.3117
+
+Feature: relationship
+------------------------------------------------------------
+relationship=Husband | count=2607 | precision=0.7711 | recall=0.6531 | fbeta=0.7072
+relationship=Not-in-family | count=1636 | precision=0.9800 | recall=0.2970 | fbeta=0.4558
+relationship=Other-relative | count=190 | precision=1.0000 | recall=0.2222 | fbeta=0.3636
+relationship=Own-child | count=1032 | precision=0.6667 | recall=0.1333 | fbeta=0.2222
+relationship=Unmarried | count=712 | precision=1.0000 | recall=0.2791 | fbeta=0.4364
+relationship=Wife | count=336 | precision=0.8629 | recall=0.6687 | fbeta=0.7535
+
+Feature: race
+------------------------------------------------------------
+race=Amer-Indian-Eskimo | count=73 | precision=0.7500 | recall=0.3333 | fbeta=0.4615
+race=Asian-Pac-Islander | count=200 | precision=0.6600 | recall=0.6346 | fbeta=0.6471
+race=Black | count=662 | precision=0.8214 | recall=0.4946 | fbeta=0.6174
+race=Other | count=45 | precision=1.0000 | recall=1.0000 | fbeta=1.0000
+race=White | count=5533 | precision=0.7959 | recall=0.6057 | fbeta=0.6879
+
+Feature: sex
+------------------------------------------------------------
+sex=Female | count=2158 | precision=0.8836 | recall=0.5265 | fbeta=0.6598
+sex=Male | count=4355 | precision=0.7791 | recall=0.6130 | fbeta=0.6861
+
+Feature: native-country
+------------------------------------------------------------
+native-country=? | count=125 | precision=0.7297 | recall=0.8438 | fbeta=0.7826
+native-country=Cambodia | count=3 | precision=1.0000 | recall=1.0000 | fbeta=1.0000
+native-country=Canada | count=28 | precision=0.3333 | recall=0.2000 | fbeta=0.2500
+native-country=China | count=14 | precision=0.7500 | recall=0.7500 | fbeta=0.7500
+native-country=Columbia | count=11 | precision=0.0000 | recall=1.0000 | fbeta=0.0000
+native-country=Cuba | count=12 | precision=1.0000 | recall=0.5000 | fbeta=0.6667
+native-country=Dominican-Republic | count=12 | precision=1.0000 | recall=1.0000 | fbeta=1.0000
+native-country=Ecuador | count=3 | precision=1.0000 | recall=0.0000 | fbeta=0.0000
+native-country=El-Salvador | count=21 | precision=1.0000 | recall=1.0000 | fbeta=1.0000
+native-country=England | count=22 | precision=0.7500 | recall=0.4286 | fbeta=0.5455
+native-country=France | count=2 | precision=0.0000 | recall=1.0000 | fbeta=0.0000
+native-country=Germany | count=28 | precision=1.0000 | recall=0.5714 | fbeta=0.7273
+native-country=Greece | count=4 | precision=1.0000 | recall=1.0000 | fbeta=1.0000
+native-country=Guatemala | count=21 | precision=1.0000 | recall=0.5000 | fbeta=0.6667
+native-country=Haiti | count=8 | precision=1.0000 | recall=1.0000 | fbeta=1.0000
+native-country=Honduras | count=3 | precision=1.0000 | recall=1.0000 | fbeta=1.0000
+native-country=Hong | count=3 | precision=1.0000 | recall=1.0000 | fbeta=1.0000
+native-country=Hungary | count=2 | precision=1.0000 | recall=0.0000 | fbeta=0.0000
+native-country=India | count=18 | precision=0.7000 | recall=1.0000 | fbeta=0.8235
+native-country=Iran | count=12 | precision=0.0000 | recall=0.0000 | fbeta=0.0000
+native-country=Ireland | count=2 | precision=1.0000 | recall=1.0000 | fbeta=1.0000
+native-country=Italy | count=13 | precision=1.0000 | recall=0.6250 | fbeta=0.7692
+native-country=Jamaica | count=21 | precision=1.0000 | recall=1.0000 | fbeta=1.0000
+native-country=Japan | count=16 | precision=0.8000 | recall=0.5714 | fbeta=0.6667
+native-country=Laos | count=2 | precision=1.0000 | recall=1.0000 | fbeta=1.0000
+native-country=Mexico | count=111 | precision=0.5000 | recall=0.3333 | fbeta=0.4000
+native-country=Nicaragua | count=11 | precision=0.0000 | recall=0.0000 | fbeta=0.0000
+native-country=Outlying-US(Guam-USVI-etc) | count=4 | precision=1.0000 | recall=1.0000 | fbeta=1.0000
+native-country=Peru | count=7 | precision=1.0000 | recall=1.0000 | fbeta=1.0000
+native-country=Philippines | count=41 | precision=0.6923 | recall=0.7500 | fbeta=0.7200
+native-country=Poland | count=12 | precision=0.5000 | recall=1.0000 | fbeta=0.6667
+native-country=Portugal | count=7 | precision=1.0000 | recall=0.0000 | fbeta=0.0000
+native-country=Puerto-Rico | count=22 | precision=0.7500 | recall=0.7500 | fbeta=0.7500
+native-country=Scotland | count=4 | precision=1.0000 | recall=1.0000 | fbeta=1.0000
+native-country=South | count=12 | precision=1.0000 | recall=0.3333 | fbeta=0.5000
+native-country=Taiwan | count=7 | precision=0.7500 | recall=1.0000 | fbeta=0.8571
+native-country=Thailand | count=7 | precision=1.0000 | recall=1.0000 | fbeta=1.0000
+native-country=Trinadad&Tobago | count=4 | precision=1.0000 | recall=1.0000 | fbeta=1.0000
+native-country=United-States | count=5835 | precision=0.7998 | recall=0.5957 | fbeta=0.6828
+native-country=Vietnam | count=15 | precision=1.0000 | recall=0.0000 | fbeta=0.0000
+native-country=Yugoslavia | count=8 | precision=1.0000 | recall=0.5000 | fbeta=0.6667
+

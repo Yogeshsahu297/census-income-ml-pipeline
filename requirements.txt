@@ -1,0 +1,24 @@
+# Pinned to the versions the project was developed and tested with
+# (Python 3.12.3). The saved model/encoder pickles require the same
+# scikit-learn version at inference time, so do not loosen these pins.
+
+# Web framework and server
+fastapi==0.142.2
+uvicorn==0.54.0
+pydantic==2.13.5
+
+# Data science
+numpy==2.4.4
+pandas==3.0.2
+scikit-learn==1.8.0
+scipy==1.17.1
+joblib==1.5.3
+
+# HTTP clients (live_post.py uses requests; FastAPI TestClient uses httpx)
+requests==2.33.1
+httpx==0.28.1
+
+# Testing and linting
+pytest==9.1.1
+pytest-cov==7.1.0
+flake8==7.4.1

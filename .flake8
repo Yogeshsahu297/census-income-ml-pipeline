@@ -1,0 +1,11 @@
+[flake8]
+max-line-length = 100
+# sanitycheck.py is the unmodified Udacity helper script, not project code.
+exclude =
+    .git,
+    __pycache__,
+    .venv,
+    venv,
+    build,
+    dist,
+    sanitycheck.py

@@ -1,0 +1,14 @@
+# Optional Render Blueprint. Auto-deploy on commit is OFF on purpose: the
+# GitHub Actions "deploy" job calls the deploy hook only after CI passes.
+services:
+  - type: web
+    name: census-income-api
+    runtime: python
+    plan: free
+    branch: main
+    autoDeployTrigger: "off"
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.3
