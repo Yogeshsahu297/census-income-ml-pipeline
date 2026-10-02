@@ -7,8 +7,8 @@ dataset, serves it through a **FastAPI** REST API, tests it, and ships it with
 | Item | Value |
 |------|-------|
 | Repository platform | **GitHub** |
-| Repository URL | `https://github.com/<YOUR-USERNAME>/<YOUR-REPO>`  ← **replace before submitting** |
-| Live API URL | `https://<YOUR-APP>.onrender.com`  ← **replace after deploying** |
+| Repository URL | `https://github.com/Yogeshsahu297/census-income-ml-pipeline` |
+| Live API URL | `https://census-income-ml-pipeline.onrender.com` |
 | Python version | 3.12.3 (`.python-version`, used by CI and Render) |
 
 > If you use Azure DevOps instead of GitHub, see [Azure DevOps variant](#azure-devops-variant).
@@ -135,7 +135,7 @@ git init -b main
 git add -A
 git status            # confirm model/*.pkl and data/census.csv are listed
 git commit -m "Initial commit: census income ML pipeline"
-git remote add origin https://github.com/<YOUR-USERNAME>/<YOUR-REPO>.git
+git remote add origin https://github.com/Yogeshsahu297/census-income-ml-pipeline.git
 git push -u origin main
 ```
 Use a public repo (or one the reviewer can access). Put its URL in the table at
@@ -168,8 +168,8 @@ GitHub → Settings → Branches → *Add branch protection rule* for `main`
 | `continuous_integration.png` | GitHub → Actions → the green run showing the `test` job (flake8 + pytest) passing |
 | `example.png` | `http://127.0.0.1:8000/docs` with `POST /predict` expanded, showing the example request body |
 | `continuous_deployment.png` | The green `deploy` job in Actions (and/or Render showing the deploy succeeded / auto-deploy setting). **Hide the hook URL** |
-| `live_get.png` | Browser at `https://<YOUR-APP>.onrender.com/` showing the greeting JSON (URL bar visible) |
-| `live_post.png` | Terminal after `python live_post.py https://<YOUR-APP>.onrender.com` showing the status code and prediction |
+| `live_get.png` | Browser at `https://census-income-ml-pipeline.onrender.com/` showing the greeting JSON (URL bar visible) |
+| `live_post.png` | Terminal after `python live_post.py https://census-income-ml-pipeline.onrender.com` showing the status code and prediction |
 
 Free Render services sleep when idle; the first request can take ~1 minute.
 Then `git add screenshots && git commit -m "Add screenshots" && git push`.
